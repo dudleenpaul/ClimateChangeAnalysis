@@ -3,6 +3,11 @@ from sklearn.base import BaseEstimator, RegressorMixin
 from typing import Tuple
 
 class CustomTemperaturePredictor(BaseEstimator, RegressorMixin):
+    """
+    A machine learning model that impliments linear regression to predict the temperature
+
+    It inherits BaseEstimator and RegressorMixin from the sklearn API
+    """
     def __init__(self, learning_rate: float = 0.01, n_iterations: int = 1000):
         self.learning_rate = learning_rate
         self.n_iterations = n_iterations
