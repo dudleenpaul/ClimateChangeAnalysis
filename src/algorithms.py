@@ -1,9 +1,34 @@
+""" algorithms.py
+Algorithms and machine laerning models the predict temperature data
+
+Classes:
+    CustomTemperaturePredictor
+Methods:
+    custom_clustering(data, n_clusters): <description>
+    detect_anomalies(time_series, window_size, threshold): <description>
+"""
+
 import numpy as np
 from sklearn.base import BaseEstimator, RegressorMixin
 from typing import Tuple
 from sklearn.cluster import KMeans
 
 class CustomTemperaturePredictor(BaseEstimator, RegressorMixin):
+    """
+    A custom machine learning model that predicts temperature
+
+    This class inherits the sklearn.base modules BaseEstimator and RegressorMixin
+
+    Attributes:
+        learning_rate (float): the rate at which the model learns
+        n_iterations (int): the number of iterations the model will go through
+        weights (<type>): <description>
+        bias (<type>): <description>
+    Methods:
+        fit(self, X, y): Train a simple linear regression model using gradient descent
+            retuns CustomTemperaturePredictor
+        predict(self, X): <description of method>
+    """
     def __init__(self, learning_rate: float = 0.01, n_iterations: int = 1000):
         """
         Initalize the CustomeTemperaturePredictor object
@@ -25,7 +50,7 @@ class CustomTemperaturePredictor(BaseEstimator, RegressorMixin):
             X (np.ndarray): array of points for the x-axis
             y (np.ndarray): array of points for the y-axis
         Returns:
-            this CustomTemperaturePredictor object
+            this CustomTemperaturePredictor object 
         """
         n_samples, n_features = X.shape
         self.weights = np.zeros(n_features)
@@ -44,6 +69,14 @@ class CustomTemperaturePredictor(BaseEstimator, RegressorMixin):
         return self
 
     def predict(self, X: np.ndarray) -> np.ndarray:
+        """
+        <description of what method does>
+
+        Args:
+            X (ndarray): <description>
+        Returns:
+            <whatever np.dot(X, self.weights) + self.bias returns>
+        """
         return np.dot(X, self.weights) + self.bias
 
 
