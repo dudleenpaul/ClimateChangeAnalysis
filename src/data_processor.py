@@ -3,6 +3,18 @@ import numpy as np
 from typing import Tuple
 
 class DataProcessor:
+    """
+    This class is responsible for loading, cleaning, and gettting features of the CSV climate data
+    from the CSV file
+
+    Attributes: 
+        file_path (str): a string representation of the filepath containing the CSV data
+        data (pandas.DataFrame): a pandas DataFrame containing the CSV data 
+    Methods:
+        load_data(self): loads the data from 'file_path' to 'data'
+        clean_data(self): removes missing data and normalizes numeric columns in 'data'
+        get_features_and_target(self): splits and gets features (date, year) and targets (temperature) from 'data'
+    """
     def __init__(self, file_path: str):
         """
         Initalize the DataProcessor class object.
