@@ -9,13 +9,28 @@ class CustomTemperaturePredictor(BaseEstimator, RegressorMixin):
     It inherits BaseEstimator and RegressorMixin from the sklearn API
     """
     def __init__(self, learning_rate: float = 0.01, n_iterations: int = 1000):
+        """
+        Initialize the CustomTemperaturePredictor class
+
+        Args:
+            learning_rate (float): the learning rate of the model
+            n_iterations (int): the number of iterations
+        """
         self.learning_rate = learning_rate
         self.n_iterations = n_iterations
         self.weights = None
         self.bias = None
 
     def fit(self, X: np.ndarray, y: np.ndarray) -> 'CustomTemperaturePredictor':
-        """Train a simple linear regression model using gradient descent."""
+        """
+        Train a simple linear regression model using gradient descent.
+
+        Args:
+            X (np.ndarray): the x-axis of the data
+            y (np.ndarray): the y-axis of the data
+        Returns:
+            CustomTemperaturePredictor
+        """
         n_samples, n_features = X.shape
         self.weights = np.zeros(n_features)
         self.bias = 0
