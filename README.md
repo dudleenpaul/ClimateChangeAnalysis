@@ -22,14 +22,14 @@ git clone https://github.com/yourusername/ClimateChangeAnalysis.git
 cd ClimateChangeAnalysis
 ```
 
-Create a virtual environment
+Create a virtual environment:
 ```python -m venv venv```
 
 Activate the virtual environment\
 Windows: ```venv\Scripts\activate```\
 macOS/Linux: ```source venv/bin/activate```
 
-Install dependencies
+Install dependencies:
 ```pip install -r requirements.txt```
 
 Ensure the data directory structure exists
