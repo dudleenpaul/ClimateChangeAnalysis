@@ -48,8 +48,9 @@ Time Scale Options: View data in monthly, yearly, or seasonal format
 Decade Selection: Compare specific decades or view all decades together
 Future Prediction: Adjust the number of years to predict into the future
 
-```
+
 Project Structure
+```
 ClimateChangeAnalysis/
 │
 ├── data/                     # Data directory
