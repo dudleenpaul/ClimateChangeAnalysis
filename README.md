@@ -48,9 +48,9 @@ Time Scale Options: View data in monthly, yearly, or seasonal format
 Decade Selection: Compare specific decades or view all decades together
 Future Prediction: Adjust the number of years to predict into the future
 
+```
 Project Structure
-Pr
-ClimateChangeAnalysis/<br/>
+ClimateChangeAnalysis/
 │
 ├── data/                     # Data directory
 │   ├── raw/                  # Raw data files
@@ -92,7 +92,7 @@ ClimateChangeAnalysis/<br/>
 ├── main.py                   # Main entry point script
 ├── README.md                 # Project documentation
 └── requirements.txt          # Project dependencies
-
+```
 Data Format
 The application expects a CSV file with the following columns:
 
