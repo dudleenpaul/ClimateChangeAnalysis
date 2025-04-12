@@ -6,13 +6,13 @@ Bruno Page
 
 # Climate Change Impact Analyzer
 A web application that visualizes and analyzes climate change trends using historical temperature data. This project allows users to interactively explore temperature patterns, seasonal variations, decade comparisons, future predictions, and anomaly detection.
-Features
 
-**Temperature Trends Visualization:** View monthly, yearly, and seasonal temperature trends over time
-**Seasonal Analysis:** Analyze how temperature patterns vary across seasons for different decades
-**Decade Comparison:** Compare average temperatures across different decades
-**Future Predictions:** Generate temperature forecasts using machine learning models
-**Anomaly Detection:** Identify unusual temperature patterns and outliers in the data
+## Features
+**Temperature Trends Visualization:** View monthly, yearly, and seasonal temperature trends over time\
+**Seasonal Analysis:** Analyze how temperature patterns vary across seasons for different decades\
+**Decade Comparison:** Compare average temperatures across different decades\
+**Future Predictions:** Generate temperature forecasts using machine learning models\
+**Anomaly Detection:** Identify unusual temperature patterns and outliers in the data\
 
 ## Setup
 
