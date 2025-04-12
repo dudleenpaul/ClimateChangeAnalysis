@@ -92,6 +92,7 @@ ClimateChangeAnalysis/
 ├── .gitignore                # Git ignore file
 ├── main.py                   # Main entry point script
 ├── README.md                 # Project documentation
+├── ProjectReport.pdf         # Project report
 └── requirements.txt          # Project dependencies
 ```
 
