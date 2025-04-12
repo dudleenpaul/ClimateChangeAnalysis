@@ -50,7 +50,7 @@ Future Prediction: Adjust the number of years to predict into the future
 
 Project Structure
 Pr
-ClimateChangeAnalysis/
+ClimateChangeAnalysis/<br/>
 │
 ├── data/                     # Data directory
 │   ├── raw/                  # Raw data files
