@@ -4,13 +4,44 @@ from sklearn.base import BaseEstimator, RegressorMixin
 from typing import Tuple
 
 class CustomTemperaturePredictor(BaseEstimator, RegressorMixin):
+    """
+    A custom machine learning model that predicts temperature
+
+    This class inherits the sklearn.base modules BaseEstimator and RegressorMixin
+
+    Attributes:
+        learning_rate (float): the rate at which the model learns
+        n_iterations (int): the number of iterations the model will go through
+        weights (<type>): <description>
+        bias (<type>): <description>
+    Methods:
+        fit(self, X, y): Train a simple linear regression model using gradient descent
+            retuns CustomTemperaturePredictor
+        predict(self, X): <description of method>
+    """
     def __init__(self, learning_rate: float = 0.01, n_iterations: int = 1000):
+        """
+        Initalize the CustomeTemperaturePredictor object
+        
+        Kwargs:
+            learning_rate (float): the rate at which the model learns
+            n_iterations (int): the number of iterations the model will go through
+        """        
         self.learning_rate = learning_rate
         self.n_iterations = n_iterations
         self.weights = None
         self.bias = None
 
     def fit(self, X: np.ndarray, y: np.ndarray) -> 'CustomTemperaturePredictor':
+        """
+        Train a simple linear regression model using gradient descent.
+        
+        Args:
+            X (np.ndarray): array of points for the x-axis
+            y (np.ndarray): array of points for the y-axis
+        Returns:
+            this CustomTemperaturePredictor object 
+        """
         n_samples, n_features = X.shape
         self.weights = np.zeros(n_features)
         self.bias = 0
