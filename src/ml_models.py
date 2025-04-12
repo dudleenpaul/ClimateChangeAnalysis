@@ -17,11 +17,11 @@ class ClimateMLModels:
     Includes Temperature prediction, Region clustering, Anomaly detection
 
     Attributes: 
-        prediction_model: 
-        clustering_model: 
-        anomaly_model: 
-        prediction_features: 
-        prediction_target: 
+        prediction_model: the prediction model from sklearn
+        clustering_model: the clustering model from sklearn (kmeans)
+        anomaly_model: the anomaly model from sklearn (isolation forest)
+        prediction_features: features of the prediction model
+        prediction_target: target of the model
     Methods:
         train_prediction_model(self, data, target, features, test_size, model_type): Train a model to predict climate parameters.
         predict_future(self, future_data, years_ahead): Predict future climate parameter values.
