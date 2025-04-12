@@ -14,11 +14,20 @@ logger = logging.getLogger(__name__)
 class ClimateMLModels:
     """
     Machine learning models for climate data analysis.
-    
-    Includes:
-    - Temperature prediction
-    - Region clustering
-    - Anomaly detection
+    Includes Temperature prediction, Region clustering, Anomaly detection
+
+    Attributes: 
+        prediction_model: the prediction model from sklearn
+        clustering_model: the clustering model from sklearn (kmeans)
+        anomaly_model: the anomaly model from sklearn (isolation forest)
+        prediction_features: features of the prediction model
+        prediction_target: target of the model
+    Methods:
+        train_prediction_model(self, data, target, features, test_size, model_type): Train a model to predict climate parameters.
+        predict_future(self, future_data, years_ahead): Predict future climate parameter values.
+        cluster_regions(self, data, features, n_clusters): Cluster regions with similar climate patterns.
+        detect_anomalies(self, data, features, contamination):  Detect anomalies in climate data.
+        _get_feature_importance(self, model, features): Get feature importance from the model if available.
     """
     
     def __init__(self):
@@ -39,12 +48,14 @@ class ClimateMLModels:
         Train a model to predict climate parameters.
         
         Args:
-            data: DataFrame containing climate data
-            target: Target variable to predict
-            features: List of feature columns to use (if None, use all numeric columns except target)
-            test_size: Proportion of data to use for testing
-            model_type: Type of model to use ('linear' or 'random_forest')
+            data (DataFrame): DataFrame containing climate data
+            target (str): Target variable to predict
             
+        Kwargs:
+            features (List[str]): List of feature columns to use (if None, use all numeric columns except target)
+            test_size (float): Proportion of data to use for testing
+            model_type (str): Type of model to use ('linear' or 'random_forest')
+
         Returns:
             Dictionary with model performance metrics
         """
@@ -104,8 +115,10 @@ class ClimateMLModels:
         Predict future climate parameter values.
         
         Args:
-            future_data: DataFrame with future feature values
-            years_ahead: Number of years ahead to predict
+            future_data (DataFrame): DataFrame with future feature values
+
+        Kwargs:
+            years_ahead (int): Number of years ahead to predict
             
         Returns:
             DataFrame with predicted values
@@ -140,9 +153,10 @@ class ClimateMLModels:
         Cluster regions with similar climate patterns.
         
         Args:
-            data: DataFrame containing climate data
-            features: List of feature columns to use for clustering
-            n_clusters: Number of clusters to create
+            data (DataFrame): DataFrame containing climate data
+            features (List[str]): List of feature columns to use for clustering
+        Kwargs:
+            n_clusters (int): Number of clusters to create
             
         Returns:
             DataFrame with original data and cluster assignments
@@ -177,9 +191,10 @@ class ClimateMLModels:
         Detect anomalies in climate data.
         
         Args:
-            data: DataFrame containing climate data
-            features: List of feature columns to use for anomaly detection
-            contamination: Expected proportion of outliers in the data
+            data (DataFrame): DataFrame containing climate data
+            feature (List[str]): List of feature columns to use for anomaly detection
+        Kwargs:
+            contamination (float): Expected proportion of outliers in the data
             
         Returns:
             DataFrame with original data and anomaly flags

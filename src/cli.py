@@ -19,6 +19,19 @@ logger = logging.getLogger(__name__)
 class CliApp:
     """
     Command-line interface for the Climate Change Impact Analyzer.
+
+    Arttributes:
+        data_processor (DataProcessor): the data processor
+        ml_models (ClimateMLModels): the climate machine learning models
+        visualizer (ClimateVisualizer): the climate data visualizer
+        data: climate data to be loaded, processed, and visualized
+    Methods:
+        parse_args(self): Parse command line arguments.
+        run(self, args): Run the Climate Change Impact Analyzer with the provided arguments.
+        _run_data_command(self, args): Execute machine learning command.
+        _run_ml_command(self, args): Execute visualization command.
+        _run_viz_command(self, args): Execute full analysis pipeline.
+        _run_pipeline_command(self, args): Execute full analysis pipeline.
     """
     
     def __init__(self):

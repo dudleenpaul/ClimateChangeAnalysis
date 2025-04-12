@@ -10,13 +10,18 @@ logger = logging.getLogger(__name__)
 class DataProcessor:
     """
     Module for loading, cleaning, and processing climate data.
+
+    Atributtes:
+        data_dir (str): string representation of the filepath for the climate data
+        raw_dir (str): string representation of the filepath for the raw data
+        processed_dir (str): string representation of the filepath for the processed data
     """
     
     def __init__(self, data_dir: str = 'data'):
         """
         Initialize the DataProcessor with path to data directory.
         
-        Args:
+        Kwargs:
             data_dir: Path to directory containing climate data files
         """
         self.data_dir = data_dir
@@ -31,7 +36,13 @@ class DataProcessor:
     
  
  def load_data():
-    """Load and prepare the climate data."""
+    """
+    Load and prepare the climate data.
+    
+    Returns:
+        True, if the data was loaded succesfully
+        False, otherwise (exception is caught)
+    """
     global data
     try:
         # Check if data file exists
