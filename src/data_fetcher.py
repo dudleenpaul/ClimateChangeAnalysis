@@ -8,6 +8,13 @@ def download_noaa_global_temp(save_path: str = "data/climate_data.csv") -> None:
     """
     Downloads monthly global land temperature data from NOAA via DataHub.
     Cleans and saves it as a ready-to-process CSV.
+
+    Returns without saving data if we fail to download the data
+
+    Kwargs:
+        save_path (str): a string representation of the filepath to save the climate data to
+    Returns:
+        None
     """
     url = "https://datahub.io/core/global-temp/r/monthly.csv"
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
