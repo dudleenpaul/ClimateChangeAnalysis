@@ -32,7 +32,7 @@ macOS/Linux: ```source venv/bin/activate```
 Install dependencies:
 ```pip install -r requirements.txt```
 
-Ensure the data directory structure exists
+Ensure the data directory structure exists:
 ```mkdir -p data/raw```
 
 ## Usage
