@@ -1,7 +1,7 @@
 ### CIS 4930, Spring 2025
-Group Members:
-Dudleen Paul
-Kensia Saint-Hilaire
+*Group Members:*\
+Dudleen Paul\
+Kensia Saint-Hilaire\
 Bruno Page
 
 # Climate Change Impact Analyzer
