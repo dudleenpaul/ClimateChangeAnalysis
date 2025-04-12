@@ -43,10 +43,10 @@ Then open your browser and navigate to: http://localhost:5000
 
 
 ## Interactive Features
-**Year Range Selection:** Filter data by selecting start and end years\
-**Time Scale Options:** View data in monthly, yearly, or seasonal format\
-**Decade Selection:** Compare specific decades or view all decades together\
-**Future Prediction:** Adjust the number of years to predict into the future
+*Year Range Selection:* Filter data by selecting start and end years\
+*Time Scale Options:* View data in monthly, yearly, or seasonal format\
+*Decade Selection:* Compare specific decades or view all decades together\
+*Future Prediction:* Adjust the number of years to predict into the future
 
 
 ## Project Structure
@@ -96,20 +96,20 @@ ClimateChangeAnalysis/
 ```
 
 ## Data Format
-The application expects a CSV file with the following columns:\
+The application expects a CSV file with the following columns:
 
-**Year:** Numeric year value\
-**Month:** Numeric month value (1-12)\
-**Temperature:** Temperature value (typically anomaly in °C)
+*Year:* Numeric year value\
+*Month:* Numeric month value (1-12)\
+*Temperature:* Temperature value (typically anomaly in °C)
 
 ## Dependencies
 
-**Flask:** Web framework\
-**Pandas:** Data manipulation\
-**NumPy:** Numerical computing\
-**Matplotlib:** Data visualization\
-**Seaborn:** Advanced visualization\
-**Scikit-learn:** Machine learning algorithms
+*Flask:* Web framework\
+*Pandas:* Data manipulation\
+*NumPy:* Numerical computing\
+*Matplotlib:* Data visualization\
+*Seaborn:* Advanced visualization\
+*Scikit-learn:* Machine learning algorithms
 
 ## Credits
 Temperature data source: Berkeley Earth Surface Temperature Study
