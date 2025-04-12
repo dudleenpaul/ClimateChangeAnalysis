@@ -9,6 +9,15 @@ logger = logging.getLogger(__name__)
 class SimpleClimateDataProcessor:
     """
     Module for processing simple climate data format from Berkeley Earth.
+
+    Attributes:
+        data_dir (str): string representation of the filepath containing the climate data
+        raw_dir (str): string representation of the filepath containing the raw data
+        processed_dir (str):  string representation of the filepath containing the processed data
+    Methods:
+        load_climate_data(self, filename="climate_data.csv"):  Load climate data in the format Year,Month,Temperature.
+        add_derived_features(self, data):  Add derived features to the dataset.
+        preprocess_pipeline(self, filename="climate_data.csv"): Run complete preprocessing pipeline for climate data.
     """
     
     def __init__(self, data_dir="data"):
@@ -30,7 +39,7 @@ class SimpleClimateDataProcessor:
         """
         Load climate data in the format Year,Month,Temperature.
         
-        Args:
+        Kwargs:
             filename: Name of the climate data file
             
         Returns:
@@ -123,7 +132,7 @@ class SimpleClimateDataProcessor:
         """
         Run complete preprocessing pipeline for climate data.
         
-        Args:
+        Kwargs:
             filename: Name of the climate data file
             
         Returns:
