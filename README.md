@@ -16,30 +16,30 @@ A web application that visualizes and analyzes climate change trends using histo
 
 ## Setup
 
-Clone the repository
+> Clone the repository
 ```
 git clone https://github.com/yourusername/ClimateChangeAnalysis.git
 cd ClimateChangeAnalysis
 ```
 
-Create a virtual environment
+> Create a virtual environment
 ```python -m venv venv```
 
-Activate the virtual environment
+> Activate the virtual environment\
 Windows: ```venv\Scripts\activate```\
 macOS/Linux: ```source venv/bin/activate```
 
-Install dependencies
+> Install dependencies
 ```pip install -r requirements.txt```
 
-Ensure the data directory structure exists
+> Ensure the data directory structure exists
 ```mkdir -p data/raw```
 
 ## Usage
-Run the Web Application
-make sure you are in the ClimateChangeAnalysis folder
-run ```python3 main.py web``` in the command line
-Then open your browser and navigate to: http://localhost:5000
+> Run the Web Application
+Make sure you are in the ClimateChangeAnalysis folder.
+Run ```python3 main.py web``` in the command line
+then open your browser and navigate to: http://localhost:5000
 
 
 ## Interactive Features
