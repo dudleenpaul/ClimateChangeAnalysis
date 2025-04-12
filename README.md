@@ -8,11 +8,11 @@ Bruno Page
 A web application that visualizes and analyzes climate change trends using historical temperature data. This project allows users to interactively explore temperature patterns, seasonal variations, decade comparisons, future predictions, and anomaly detection.
 
 ## Features
-**Temperature Trends Visualization:** View monthly, yearly, and seasonal temperature trends over time\
-**Seasonal Analysis:** Analyze how temperature patterns vary across seasons for different decades\
-**Decade Comparison:** Compare average temperatures across different decades\
-**Future Predictions:** Generate temperature forecasts using machine learning models\
-**Anomaly Detection:** Identify unusual temperature patterns and outliers in the data\
+*Temperature Trends Visualization:* View monthly, yearly, and seasonal temperature trends over time\
+*Seasonal Analysis:* Analyze how temperature patterns vary across seasons for different decades\
+*Decade Comparison:* Compare average temperatures across different decades\
+*Future Predictions:* Generate temperature forecasts using machine learning models\
+*Anomaly Detection:* Identify unusual temperature patterns and outliers in the data\
 
 ## Setup
 
@@ -26,14 +26,14 @@ Create a virtual environment
 ```python -m venv venv```
 
 Activate the virtual environment
-Windows: ```venv\Scripts\activate```
-macOS/Linux: ```source venv/bin/activate```
+Windows: ```venv\Scripts\activate```\
+macOS/Linux: ```source venv/bin/activate```\
 
 Install dependencies
-```pip install -r requirements.txt```
+```pip install -r requirements.txt```\
 
 Ensure the data directory structure exists
-```mkdir -p data/raw```
+```mkdir -p data/raw```\
 
 ## Usage
 Run the Web Application
