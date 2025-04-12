@@ -27,18 +27,18 @@ Create a virtual environment
 
 Activate the virtual environment
 Windows: ```venv\Scripts\activate```\
-macOS/Linux: ```source venv/bin/activate```\
+macOS/Linux: ```source venv/bin/activate```
 
 Install dependencies
-```pip install -r requirements.txt```\
+```pip install -r requirements.txt```
 
 Ensure the data directory structure exists
-```mkdir -p data/raw```\
+```mkdir -p data/raw```
 
 ## Usage
 Run the Web Application
 make sure you are in the ClimateChangeAnalysis folder
-run "python3 main.py web" in the command line
+run ```python3 main.py web``` in the command line
 Then open your browser and navigate to: http://localhost:5000
 
 
